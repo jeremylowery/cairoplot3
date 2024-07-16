@@ -14,7 +14,7 @@ clean:
 	rm -rf build
 
 upload: $(WHEEL)
-	python3 -m twine upload $(TARBALL) $(WHEEL)
+	$(PYTHON) -m twine upload $(TARBALL) $(WHEEL)
 
 devenv: .venv
 
